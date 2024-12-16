@@ -31,6 +31,15 @@ The goal of this project is to **detect and analyze the Zeus Banking Trojan** us
 - Search for the malware's hash in public analysis tools (e.g., **ANY.RUN**) to confirm Indicators of Compromise (IOCs):
   - File Hash (SHA256): `4644b5fb10fb84c0d47bec4b5a48d5e60165e8ae2130fca5c055633aaad73162`
   - Additional Malicious IP: `23.213.170.81`
+ Why we should Block the IP 85.114.128.127?
+The IP belongs to a German hosting company called Fastwebserver.de.
+It is not marked as "malicious" on major security websites.
+Why it could be suspicious:
+
+the DNS server is not part of your approved list (like Google 8.8.8.8 or Cloudflare 1.1.1.1), traffic to it might mean:
+Malware or viruses are using this server.
+Data is being secretly sent out (DNS tunneling).
+
 ![Screenshot 2024-12-13 141339](https://github.com/user-attachments/assets/987e09a6-c88d-4b47-aebd-79e30b7e92ea)
 ![Screenshot 2024-12-13 141350](https://github.com/user-attachments/assets/d7fba6a9-9b8b-4f77-aa73-47ee88aa3348)
 
