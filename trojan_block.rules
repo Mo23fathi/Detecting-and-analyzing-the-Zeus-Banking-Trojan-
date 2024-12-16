@@ -1,0 +1,8 @@
+# Rule to block traffic to the specified IP address
+alert ip any any -> 85.114.128.127 any (msg:"Blocked Trojan Communication to IP 85.114.128.127"; sid:100001; rev:1; classtype:trojan-activity; priority:1;)
+
+# Rule to detect/block DNS queries for the specified domain and its subdomains
+alert dns any any -> any any (msg:"Blocked DNS query for fpdownload.macromedia.com (Trojan IOC)"; content:"fpdownload.macromedia.com"; nocase; sid:100002; rev:1; classtype:trojan-activity; priority:1;)
+
+# Rule to block DNS responses containing the resolved IP or CNAME chain for the malicious domain
+alert dns any any -> any any (msg:"Blocked DNS response for Trojan domain resolving to IP 85.114.128.127"; content:"85.114.128.127"; sid:100003; rev:1; classtype:trojan-activity; priority:1;)
