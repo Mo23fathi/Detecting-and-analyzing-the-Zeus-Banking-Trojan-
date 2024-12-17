@@ -56,6 +56,34 @@ Based on the identified IOCs, the following **Suricata rules** were created to d
 
 
 ## ** [3]  Steps to Implement Volatility **
+### 1.First we will download our vm  and python 3 and volatility And start scanning the operating system info and it's process 
+![image](https://github.com/user-attachments/assets/8b267539-c413-4d92-a780-d28064fcd94f)
+
+![image](https://github.com/user-attachments/assets/dda447f9-961c-482e-9eb7-79f7556e81ab)
+
+![image](https://github.com/user-attachments/assets/c6658858-670d-4434-8e85-cbd9d39bbbe2)
+
+### 2.There is nothing malicious so we will check the connections
+![image](https://github.com/user-attachments/assets/bcdc8581-49d1-4f93-af11-9c4f6c004226)
+
+![image](https://github.com/user-attachments/assets/7a169ca6-7321-4b83-9f41-52f73cf801e1)
+
+![image](https://github.com/user-attachments/assets/4677be71-7896-451e-844d-adacd6d157b7)
+
+### 3.we found only one file and we checked its path and we found nothing and now we will check the code if it's injected and we found that there is a mz header and we dumped it but we also found nothing
+![image](https://github.com/user-attachments/assets/03fb638f-7f1e-4144-a029-c32bc17a5e37)
+
+![image](https://github.com/user-attachments/assets/947ada9e-1e80-483f-b3f8-844cc63e7fa3)
+
+![image](https://github.com/user-attachments/assets/0d7e12c8-1684-4227-b233-962ee44dfcee)
+
+
+### 4.we will try to dump the section of the memory we think is injected and it was actually malicious 
+![image](https://github.com/user-attachments/assets/5d671f1d-9fc7-47b6-9856-6827d0a2c806)
+
+![image](https://github.com/user-attachments/assets/d141bad8-ab88-421d-bc3b-f0ae132be725)
+
+
 
 
 
