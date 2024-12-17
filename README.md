@@ -84,6 +84,27 @@ Based on the identified IOCs, the following **Suricata rules** were created to d
 ![image](https://github.com/user-attachments/assets/d141bad8-ab88-421d-bc3b-f0ae132be725)
 
 
+### 5.we will check the most used mechanisms by malwares and we will find that this pid has a handle on another exe and we found that is a winlogon.exe
+
+![image](https://github.com/user-attachments/assets/e55a9617-2e8b-4143-9eed-e24b96692561)
+
+![image](https://github.com/user-attachments/assets/b4003d8a-23a0-4ec4-a2bc-648e126a23a8)
+
+### 6.Now we will check if it’s injected and we will dump it and check it and we find that is malicious 
+![image](https://github.com/user-attachments/assets/07b9fe23-e72f-4b7c-9182-3a5562d7a8e9)
+
+![image](https://github.com/user-attachments/assets/7186c19b-36e0-48c1-a650-70ee2ec59bd6)
+
+![image](https://github.com/user-attachments/assets/b043bef7-c85e-41c7-989a-4d8602af09d8)
+
+
+### 7.We will check the mutants we find _AVIRA_2109 which looks suspicious and we will search for simillars and we found another one 
+![image](https://github.com/user-attachments/assets/33ed8c26-b18e-489a-b325-7097d4abc2a5)
+
+
+![image](https://github.com/user-attachments/assets/21eda713-94d8-46fb-8b84-256708ace49a)
+
+
 
 
 
