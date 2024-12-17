@@ -55,6 +55,9 @@ Based on the identified IOCs, the following **Suricata rules** were created to d
 ![image](https://github.com/user-attachments/assets/0f5664c9-f352-44fe-b10a-d41d0328dda0)
 
 
+## ** [3]  Steps to Implement Volatility **
+
+
 
 
 
