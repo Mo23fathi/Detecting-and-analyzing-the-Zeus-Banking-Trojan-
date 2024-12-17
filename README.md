@@ -67,5 +67,6 @@ Based on the identified IOCs, the following **Suricata rules** were created to d
 ![Screenshot 2024-12-13 051307](https://github.com/user-attachments/assets/a9de8d2d-e573-444f-85e7-7681343a29d3)
 
 ### 3. ** here is output of the yara rules  after  running the same yara rule on the memory dump file of the virtual machine: **
-![image](https://github.com/user-attachments/assets/19358d57-ae92-4a64-b9c3-6aaa59cf5b3b)
+![image](https://github.com/user-attachments/assets/56ac24eb-2fc0-4551-a835-5684f3c6d859)
+
 
