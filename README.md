@@ -164,8 +164,8 @@ Based on the identified IOCs, the following **Suricata rules** were created to d
 
 
 ## ** [4]  Steps to Implement yara rules **
-### 1. ** To identify YARA rules for the Zeus Trojan,  I searched the **Open Threat Exchange ( websites that share threats  ) (example: OTX)  ** website for publicly available signatures. The following rule was obtained from [OTX YARA Database (https://otx.alienvault.com/indicator/yara/1bee7c83ba67483bfb34ad5fe6b08c7413ce2e00): **
-![Screenshot 2024-12-13 152227](https://github.com/user-attachments/assets/2f716faa-afb0-479b-a6f3-c119706e6e9b)
+### 1. ** To identify YARA rules for the Zeus Trojan,  I searched the **Open Threat Exchange ( websites that share threats  ) (example: OTX)  ** website for publicly available signatures. The following rule was obtained from [OTX YARA Database (https://otx.alienvault.com/indicator/yara/932be60a5873010929bbf0751f9934016f06c640): **
+![image](https://github.com/user-attachments/assets/22cfd387-89ba-4b04-8351-ac4321698454)
 
 ### 2. ** here is output of the yara rules  after  running the yara rule on the malware file: **
 
