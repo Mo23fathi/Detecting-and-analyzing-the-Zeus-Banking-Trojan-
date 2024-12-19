@@ -55,6 +55,59 @@ Based on the identified IOCs, the following **Suricata rules** were created to d
 ![image](https://github.com/user-attachments/assets/0f5664c9-f352-44fe-b10a-d41d0328dda0)
 
 
+## ** [2]  Integrate with Splunk **
+
+### 1. **Ingest Suricata logs to Splunk**
+
+- After forwarding the `eve.json` file which contains detailed structured information about various events detected by Suricata
+  ![2024-12-15 18_54_28-Windows 10 x64 - VMware Workstation](https://github.com/user-attachments/assets/88b17af2-fe3e-41b5-b1b7-c59869cb8c23)
+
+- Add Suricata logs as a data source in Splunk:
+  - Navigate to **Settings** > **Data Inputs** > **Files & Directories**.
+  - Add the directory where Suricata logs are stored (e.g., C:\Users\abdoo\Desktop\Suricata\logs\eve.json).
+    ![2024-12-15 18_56_51-Windows 10 x64 - VMware Workstation](https://github.com/user-attachments/assets/47fde0a5-f1ac-43f8-b13f-ccd58aa8f4ca)
+  - Assign an appropriate source type, which is JSON
+    ![2024-12-15 18_57_04-Windows 10 x64 - VMware Workstation](https://github.com/user-attachments/assets/a1b8f079-ac2b-4842-9ddd-6242c77f67bf)
+  - Choose the destination index (e.g., `suricata_logs`).
+    ![2024-12-15 18_57_58-Windows 10 x64 - VMware Workstation](https://github.com/user-attachments/assets/85b8c802-bba2-433e-b15e-12362784558d)
+  - Validate and Search Logs in Splunk:
+    ![2024-12-15 18_59_09-Windows 10 x64 - VMware Workstation](https://github.com/user-attachments/assets/38723103-3880-4cde-aedc-72d2ec4ba913)
+
+  
+
+
+### 2. **Ingest System Logs**
+- Add Windows Event Logs as a Data Input:
+  - Go to **Settings** > **Data Inputs** > **Local Event Logs**.
+  - Add the following logs:
+    - Application
+    - Security
+    - System
+      ![2024-12-15 19_04_38-Windows 10 x64 - VMware Workstation](https://github.com/user-attachments/assets/cc087c93-bc30-407f-a2e3-113c47484013)
+  - Assign them to a new index: `windows_logs`.
+  - Verify Ingestion:
+    ![2024-12-15 19_06_14-Windows 10 x64 - VMware Workstation](https://github.com/user-attachments/assets/373f3b31-7f8f-487a-a1a7-6c70bf36681a)
+
+### 3. ** Create Correlation Rules**
+- to Detect abnormal outbound traffic:
+  ![2024-12-15 23_37_30-Windows 10 x64 - VMware Workstation](https://github.com/user-attachments/assets/ffc3d190-f3ba-44b6-a2bf-86894715748a)
+- to Link network anomalies with system activity (e.g., file system changes, process creation):
+  ![2024-12-16 00_23_24-Windows 10 x64 - VMware Workstation](https://github.com/user-attachments/assets/636b2853-1c08-41ac-850b-7f4c04ee381d)
+  ![2024-12-16 00_23_33-Windows 10 x64 - VMware Workstation](https://github.com/user-attachments/assets/b08790c2-6f14-455e-9653-268840a6d7a1)
+
+
+
+
+
+### 4. ** Creating visual dashboards in Splunk to track malicious activity **
+
+![2024-12-15 19_28_42-Windows 10 x64 - VMware Workstation](https://github.com/user-attachments/assets/a1938965-324d-49f4-83b8-b77189079594)
+![2024-12-15 19_33_43-Windows 10 x64 - VMware Workstation](https://github.com/user-attachments/assets/dd4e02f6-7caf-4e8c-9246-500592d50343)
+![2024-12-15 20_22_01-Windows 10 x64 - VMware Workstation](https://github.com/user-attachments/assets/0690f560-363a-4670-b2a2-ba25a606e406)
+
+
+
+
 ## ** [3]  Steps to Implement Volatility **
 ### 1.First we will download our vm  and python 3 and volatility And start scanning the operating system info and it's process 
 ![image](https://github.com/user-attachments/assets/8b267539-c413-4d92-a780-d28064fcd94f)
