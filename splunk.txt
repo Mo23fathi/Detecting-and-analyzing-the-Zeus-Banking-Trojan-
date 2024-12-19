@@ -1,0 +1,15 @@
+# query to Detect abnormal outbound traffic 
+
+index="suricata_logs" event_type=alert
+| stats count by src_ip, dest_ip, dest_port, alert.signature
+| where dest_port!=80 AND dest_port!=443
+| sort - count
+
+
+# query to link network anomalies with system activity
+
+(index="windows_logs"  AND EventCode=4688)
+OR
+(index="suricata_logs" event_type="alert" )
+| stats count by  _time
+| sort - _time
