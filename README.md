@@ -18,8 +18,12 @@ The goal of this project is to **detect and analyze the Zeus Banking Trojan** us
 - Execute the malware within the VM to observe its behavior.
 ![Screenshot 2024-12-13 135825](https://github.com/user-attachments/assets/d8634997-f8e2-480f-8a67-3e79f7795dbb)
 
+### 2. **Useing  the default rules to detect common threats.(the default rule obtained from: https://rules.emergingthreats.net/open/suricata/ )**
+And here is the output:
+![image](https://github.com/user-attachments/assets/1c17b1bc-d63b-450b-81d9-26e9febea290)
 
-### 2. **Capture IOC Information**
+
+### 3. **Capture IOC Information**
 - From **Wireshark**, identify:
   - Malicious IP addresses the Trojan connects to.
   - DNS requests made by the Trojan.
@@ -44,12 +48,12 @@ Data is being secretly sent out (DNS tunneling).
 ![Screenshot 2024-12-13 141350](https://github.com/user-attachments/assets/d7fba6a9-9b8b-4f77-aa73-47ee88aa3348)
 
 
-### 3. **Write Suricata Rules for Detection and Blocking**
+### 4. **Write Suricata Rules for Detection and Blocking**
 Based on the identified IOCs, the following **Suricata rules** were created to detect and block malicious activity:
 ![image](https://github.com/user-attachments/assets/cd264493-3dcb-409a-87ad-40d73fdc1f74)
 
 
-### 4. ** here is sample of the log file  after adding the rules to the suricata  and running the trojan: **
+### 5. ** here is sample of the log file  after adding the rules to the suricata  and running the trojan: **
 ![Screenshot 2024-12-13 151631](https://github.com/user-attachments/assets/00c8e2fd-0ce0-4295-913d-0ea69bbc1088)
 
 ![image](https://github.com/user-attachments/assets/0f5664c9-f352-44fe-b10a-d41d0328dda0)
