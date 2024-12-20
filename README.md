@@ -18,7 +18,7 @@ The goal of this project is to **detect and analyze the Zeus Banking Trojan** us
 - Execute the malware within the VM to observe its behavior.
 ![Screenshot 2024-12-13 135825](https://github.com/user-attachments/assets/d8634997-f8e2-480f-8a67-3e79f7795dbb)
 
-### 2. **Useing  the default rules to detect common threats.(the default rule obtained from: https://rules.emergingthreats.net/open/suricata/ )**
+### 2. **Using  the default rules to detect common threats.(the default rule obtained from: https://rules.emergingthreats.net/open/suricata/ )**
 And here is the output:
 ![image](https://github.com/user-attachments/assets/1c17b1bc-d63b-450b-81d9-26e9febea290)
 
